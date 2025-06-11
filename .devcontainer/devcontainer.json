@@ -67,6 +67,7 @@
 		"LIBGL_ALWAYS_SOFTWARE": "1" , // Needed for software rendering of opengl
         // "NVIDIA_DRIVER_CAPABILITIES": "all",
         // "NVIDIA_VISIBLE_DEVICES": "all"
+        "ROS_DOMAIN_ID": "42"
     },
     "runArgs": [
         // RealTime

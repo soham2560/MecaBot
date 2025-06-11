@@ -20,6 +20,8 @@ ROS2 Setup for MecaBot at RRC, IIIT-H
     - Open Command Pallete with `Ctrl+Shift+P`
     - Select Option to Rebuild and Reopen Container
 
+  #### Note: To prevent unintentional cross machine communication on the same network, be sure to set the [ROS_DOMAIN_ID](/.devcontainer/devcontainer.json#L70) to a number(between 0-100) different that the other machine
+
   ### Action Buttons
   We use the [VSCode Action Button Extension](https://marketplace.visualstudio.com/items?itemName=seunlanlege.action-buttons) to facilitate development. They are not necessary but certainly do help. To access these buttons you may need to enable it through the Extensions Tab in VSCode, though the extension should download automatically on container startup. The available buttons are as follows:
   - `Build`
