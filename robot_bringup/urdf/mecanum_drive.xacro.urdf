@@ -191,10 +191,10 @@
   <joint name="velodyne_base_scan_joint" type="fixed">
     <origin xyz="0 0 0.0377" rpy="0 0 0"/>
     <parent link="velodyne_base_link"/>
-    <child link="laser_frame"/>
+    <child link="base_scan"/>
   </joint>
 
-  <link name="laser_frame">
+  <link name="base_scan">
     <inertial>
       <mass value="0.01"/>
       <origin xyz="0 0 0"/>
@@ -266,14 +266,14 @@
   </xacro:if>
 
   <xacro:if value="$(arg USE_WITH_SIM)">
-    <gazebo reference="laser_frame">
+    <gazebo reference="base_scan">
       <sensor name="laser" type="gpu_lidar">
         <pose> 0 0 0 0 0 0 </pose>
         <always_on>true</always_on>
         <visualize>true</visualize>
         <update_rate>10</update_rate>
         <topic>scan</topic>
-        <gz_frame_id>laser_frame</gz_frame_id>
+        <gz_frame_id>base_scan</gz_frame_id>
         <lidar>
           <scan>
             <horizontal>

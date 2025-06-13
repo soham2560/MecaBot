@@ -241,7 +241,7 @@ def generate_launch_description():
                               'launch', 'ld08.launch.py')]),
         launch_arguments={
             'use_sim_time': use_sim_time,
-            "frame_id": "laser_frame"
+            "frame_id": "base_scan"
         }.items(),
             condition=UnlessCondition(use_sim_time))
     

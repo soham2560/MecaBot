@@ -85,7 +85,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        laser_frame:
+        base_scan:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -126,7 +126,7 @@ Visualization Manager:
           Value: true
         front_right_wheel:
           Value: true
-        laser_frame:
+        base_scan:
           Value: true
         map:
           Value: true
@@ -158,7 +158,7 @@ Visualization Manager:
               rear_right_wheel:
                 {}
               velodyne_base_link:
-                laser_frame:
+                base_scan:
                   {}
       Update Interval: 0
       Value: true
