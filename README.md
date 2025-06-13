@@ -111,4 +111,3 @@ Individual Launching (⚠️ **_Deprecated_**: Look at Launch Args of main launc
   ```
   or make the arg `use_joy:=True` while launching when you have a Joystick Controller connected
 
-Note: The README's in this repository are inspired by [this](https://github.com/TheProjectsGuy/MR21-CS7.503)
