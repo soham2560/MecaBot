@@ -240,7 +240,8 @@ def generate_launch_description():
                 [os.path.join(get_package_share_directory('ld08_driver'),
                               'launch', 'ld08.launch.py')]),
         launch_arguments={
-            'use_sim_time': use_sim_time
+            'use_sim_time': use_sim_time,
+            "frame_id": "laser_frame"
         }.items(),
             condition=UnlessCondition(use_sim_time))
     
